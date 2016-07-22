@@ -10,12 +10,45 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 
-<body class="container">
-  <h1>Nested API Call Exercise</h1>
-  <hr>
+<body>
+  <main class="container">
+    <h1>Nested API Call Exercise</h1>
+    <hr>
+    <fieldset>
+      <button class="col-md-offset-1">Da fuck am I?</button>
+    </fieldset>
+    <div class="col-md-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Response</th>
+            <th>Results</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>https://api.ipify.org</td>
+            <td id="ipAddress"></td>
+          </tr>
+          <tr>
+            <td>ipinfo.io</td>
+            <td id="location"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <div id="googleMap" style="width:500px;height:380px;"></div>
   <!-- your form -->
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+
 </body>
 
 </html>
